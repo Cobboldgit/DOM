@@ -1,0 +1,70 @@
+html {
+  font-size: 10px;
+  background: url("images/organ.jpg") bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 100vh;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center; */
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  /* height: 100vh; */
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.539);
+  padding-bottom: 1rem;
+}
+
+.key {
+  /* border: .4rem solid rgba(0, 0, 0, 0.24); */
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  margin: 0.05rem;
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+  transition: all 0.07s ease;
+  width: 7rem;
+  height: 20rem;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  background: rgb(255, 251, 251);
+
+  
+}
+
+.playing {
+  transform-origin: top;
+  transform: rotateX(0.05turn);
+  box-shadow: inset 0 0 0.5rem #00000097;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #ffc600;
+}
