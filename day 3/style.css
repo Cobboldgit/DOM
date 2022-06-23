@@ -1,0 +1,57 @@
+:root {
+  --main: #fec1b8;
+}
+
+html {
+  background: #95aeb5 url("clouds.jpg") no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-size: 2rem;
+  /* display: flex;
+    flex: 1; */
+  min-height: 100vh;
+  align-items: center;
+}
+
+.clock {
+  width: 30rem;
+  height: 30rem;
+  border: 20px solid var(--main);
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  padding: 2rem;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px var(--main),
+    inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hand {
+  width: 50%;
+  height: 6px;
+  right: 50%;
+  position: absolute;
+  top: 50%;
+  background: white;
+  border-radius: 40%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hour-hand {
+  width: 30%;
+  height: 0.75rem;
+}
+.min-hand {
+  width: 40%;
+  height: 0.5rem;
+}
+.second-hand {
+  width: 45%;
+  height: 0.25rem;
+}
